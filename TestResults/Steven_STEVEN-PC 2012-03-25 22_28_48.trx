@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6177ce63-ae3d-466b-add8-bf682060f112" name="Steven@STEVEN-PC 2012-03-25 22:28:48" runUser="Steven-PC\Steven" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="9a3cc359-a60d-41bb-8c84-7024cd7e5428">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Steven_STEVEN-PC 2012-03-25 22_28_48">
+      <DeploymentItem filename="C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcbo\bin\Debug\LinqToLcbo.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-25T22:28:48.1319882-04:00" queuing="2012-03-25T22:28:48.8027894-04:00" start="2012-03-25T22:28:48.8651895-04:00" finish="2012-03-25T22:29:08.5524241-04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="24" executed="24" passed="23" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_where_and" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="60b0cf60-fe03-004c-4bfa-4785b16f1dce">
+      <Execution id="9f398063-0edb-4675-9c75-4a15f5d1c498" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_where_and" />
+    </UnitTest>
+    <UnitTest name="Test_multi_clause_where_and_where_not" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="b57e08db-af27-e035-f405-a5594770d231">
+      <Execution id="a1c6f320-59e4-40fe-932c-8a18b15a100f" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_multi_clause_where_and_where_not" />
+    </UnitTest>
+    <UnitTest name="Test_toList" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="6ba02aa5-1bfb-ebcb-b41c-615999aa8334">
+      <Execution id="49dbac01-be5a-4c8f-9e02-502036d5ab14" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_toList" />
+    </UnitTest>
+    <UnitTest name="Test_where_and_orderby" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="4789e52f-0940-a3c8-fe6a-e13b73623977">
+      <Execution id="d023664d-9add-4c4d-bfb3-0f55806168cf" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_where_and_orderby" />
+    </UnitTest>
+    <UnitTest name="Test_bool_where" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="4a258fa4-e5be-4f7a-e3e4-e1dc90744510">
+      <Execution id="95e30c25-e5c0-4d38-b9eb-7c2ab39e7fcb" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_bool_where" />
+    </UnitTest>
+    <UnitTest name="Test_stores_geo" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="b4e8e3a3-b297-7283-08b2-965d1e44cae4">
+      <Execution id="95820327-dbd1-4a58-b3dd-e5b29ef6db5b" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.StoreTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_stores_geo" />
+    </UnitTest>
+    <UnitTest name="Test_multi_clause_orderby" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="c951cc96-fab2-20b5-116b-f8b36cf91c10">
+      <Execution id="6a7cb285-dd24-4b66-a4f3-c0fb672d6a93" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_multi_clause_orderby" />
+    </UnitTest>
+    <UnitTest name="Test_products_in_store_by_id" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="c9354350-cbda-a1f1-e280-b767455dde09">
+      <Execution id="dfc079a5-a10b-4dfd-9998-d49785c72249" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_products_in_store_by_id" />
+    </UnitTest>
+    <UnitTest name="Test_skip" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="698a4013-3243-f2c9-ad1a-f5a3b3e0436d">
+      <Execution id="88125a53-2216-4293-82df-9c2b225c86de" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_skip" />
+    </UnitTest>
+    <UnitTest name="Test_enumerator" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="8bab2567-7cbc-0ab9-1b8e-7f96790444c6">
+      <Execution id="21f581d6-7700-496d-950a-369690773209" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_enumerator" />
+    </UnitTest>
+    <UnitTest name="Test_products_in_store_with_where" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="81800161-52ee-707e-8522-02ae1672866e">
+      <Execution id="605bf7c9-7992-4f9a-af85-a0e69e664b7d" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_products_in_store_with_where" />
+    </UnitTest>
+    <UnitTest name="Test_orderby" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="0d67a389-f27a-5927-df7c-deaa56a2ac23">
+      <Execution id="a2eba870-f687-4717-b6a3-fec454b58cc6" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_orderby" />
+    </UnitTest>
+    <UnitTest name="Test_where" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="48be9065-54cb-9463-4db0-a28fb13c3f13">
+      <Execution id="802f2c7a-45b3-4f73-9ad3-903c51f2d577" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_where" />
+    </UnitTest>
+    <UnitTest name="Test_stores_with_multi_where" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="bb439f9f-fec1-c8e6-de29-38825c210bee">
+      <Execution id="526a8ddf-5382-45e3-8575-d058e1fa5ffd" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.StoreTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_stores_with_multi_where" />
+    </UnitTest>
+    <UnitTest name="Test_stores_searchQuery" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="e173aa33-7fbd-6163-2a04-a59c87c51838">
+      <Execution id="0663cf8e-3d5f-4025-b6fc-7663b1f14851" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.StoreTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_stores_searchQuery" />
+    </UnitTest>
+    <UnitTest name="Test_take_and_skip" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="b3d263e1-3345-99ad-b04d-44df64ff509a">
+      <Execution id="96ae7fa9-ee2c-4827-80e2-ab78db28719c" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_take_and_skip" />
+    </UnitTest>
+    <UnitTest name="Test_products_in_store_lazy_loaded" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="e2f6ed2b-f024-54cb-80b7-ad507738c243">
+      <Execution id="64e319e6-e94b-4cc9-ab77-f4ad07fb3679" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_products_in_store_lazy_loaded" />
+    </UnitTest>
+    <UnitTest name="Test_single" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="ec9a58f6-675c-e225-4fe5-716d9377a0a3">
+      <Execution id="2ece825b-0f2c-42bb-8785-65576d5e32f8" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_single" />
+    </UnitTest>
+    <UnitTest name="Test_multi_clause_where" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="a7b1c2c3-270d-28e1-4f96-d6cdab3fb0cb">
+      <Execution id="a7854c8a-1778-4e46-8fee-af5f814a7791" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_multi_clause_where" />
+    </UnitTest>
+    <UnitTest name="Test_take" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="71326b83-217a-3999-c98f-d98f8093dd74">
+      <Execution id="402700a9-138b-49a5-b8f7-1955b36d5592" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_take" />
+    </UnitTest>
+    <UnitTest name="Test_product_by_inventory" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="b2719bc8-3ebd-312c-8cb4-2d05465c386b">
+      <Execution id="295e0484-8740-45ac-8cd5-cfcd8652459b" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_product_by_inventory" />
+    </UnitTest>
+    <UnitTest name="Test_stores_with_product" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="fdf8930d-32cc-6043-e5e7-a8a1cf1cdf45">
+      <Execution id="d2929ec0-1b5c-4e12-b38f-b86764b66540" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.StoreTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_stores_with_product" />
+    </UnitTest>
+    <UnitTest name="Test_where_not" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="307ba5ae-4047-4671-a0ae-59b923691649">
+      <Execution id="08918222-71c1-4ea5-a59e-7e41f569442c" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.ProductTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_where_not" />
+    </UnitTest>
+    <UnitTest name="Test_stores_signle" storage="c:\users\steven\documents\visual studio 2010\projects\linqtolcbo\linqtolcbotests\bin\debug\linqtolcbotests.dll" id="b366df67-fbbf-42de-4bd5-7bf833b872da">
+      <Execution id="c0119218-dbdd-4070-8ef3-8ec3bbc7a68b" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/LinqToLcbo/LinqToLcboTests/bin/Debug/LinqToLcboTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="LinqToLcboTests.StoreTest, LinqToLcboTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_stores_signle" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e173aa33-7fbd-6163-2a04-a59c87c51838" executionId="0663cf8e-3d5f-4025-b6fc-7663b1f14851" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4e8e3a3-b297-7283-08b2-965d1e44cae4" executionId="95820327-dbd1-4a58-b3dd-e5b29ef6db5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb439f9f-fec1-c8e6-de29-38825c210bee" executionId="526a8ddf-5382-45e3-8575-d058e1fa5ffd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdf8930d-32cc-6043-e5e7-a8a1cf1cdf45" executionId="d2929ec0-1b5c-4e12-b38f-b86764b66540" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b366df67-fbbf-42de-4bd5-7bf833b872da" executionId="c0119218-dbdd-4070-8ef3-8ec3bbc7a68b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48be9065-54cb-9463-4db0-a28fb13c3f13" executionId="802f2c7a-45b3-4f73-9ad3-903c51f2d577" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="307ba5ae-4047-4671-a0ae-59b923691649" executionId="08918222-71c1-4ea5-a59e-7e41f569442c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7b1c2c3-270d-28e1-4f96-d6cdab3fb0cb" executionId="a7854c8a-1778-4e46-8fee-af5f814a7791" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b57e08db-af27-e035-f405-a5594770d231" executionId="a1c6f320-59e4-40fe-932c-8a18b15a100f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0d67a389-f27a-5927-df7c-deaa56a2ac23" executionId="a2eba870-f687-4717-b6a3-fec454b58cc6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c951cc96-fab2-20b5-116b-f8b36cf91c10" executionId="6a7cb285-dd24-4b66-a4f3-c0fb672d6a93" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec9a58f6-675c-e225-4fe5-716d9377a0a3" executionId="2ece825b-0f2c-42bb-8785-65576d5e32f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8bab2567-7cbc-0ab9-1b8e-7f96790444c6" executionId="21f581d6-7700-496d-950a-369690773209" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60b0cf60-fe03-004c-4bfa-4785b16f1dce" executionId="9f398063-0edb-4675-9c75-4a15f5d1c498" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a258fa4-e5be-4f7a-e3e4-e1dc90744510" executionId="95e30c25-e5c0-4d38-b9eb-7c2ab39e7fcb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ba02aa5-1bfb-ebcb-b41c-615999aa8334" executionId="49dbac01-be5a-4c8f-9e02-502036d5ab14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c9354350-cbda-a1f1-e280-b767455dde09" executionId="dfc079a5-a10b-4dfd-9998-d49785c72249" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e2f6ed2b-f024-54cb-80b7-ad507738c243" executionId="64e319e6-e94b-4cc9-ab77-f4ad07fb3679" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="81800161-52ee-707e-8522-02ae1672866e" executionId="605bf7c9-7992-4f9a-af85-a0e69e664b7d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4789e52f-0940-a3c8-fe6a-e13b73623977" executionId="d023664d-9add-4c4d-bfb3-0f55806168cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="71326b83-217a-3999-c98f-d98f8093dd74" executionId="402700a9-138b-49a5-b8f7-1955b36d5592" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="698a4013-3243-f2c9-ad1a-f5a3b3e0436d" executionId="88125a53-2216-4293-82df-9c2b225c86de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3d263e1-3345-99ad-b04d-44df64ff509a" executionId="96ae7fa9-ee2c-4827-80e2-ab78db28719c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2719bc8-3ebd-312c-8cb4-2d05465c386b" executionId="295e0484-8740-45ac-8cd5-cfcd8652459b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0663cf8e-3d5f-4025-b6fc-7663b1f14851" testId="e173aa33-7fbd-6163-2a04-a59c87c51838" testName="Test_stores_searchQuery" computerName="STEVEN-PC" duration="00:00:00.0143835" startTime="2012-03-25T22:28:48.8963895-04:00" endTime="2012-03-25T22:28:49.4891906-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0663cf8e-3d5f-4025-b6fc-7663b1f14851">
+    </UnitTestResult>
+    <UnitTestResult executionId="95820327-dbd1-4a58-b3dd-e5b29ef6db5b" testId="b4e8e3a3-b297-7283-08b2-965d1e44cae4" testName="Test_stores_geo" computerName="STEVEN-PC" duration="00:00:00.0005210" startTime="2012-03-25T22:28:49.5047906-04:00" endTime="2012-03-25T22:28:49.5047906-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95820327-dbd1-4a58-b3dd-e5b29ef6db5b">
+    </UnitTestResult>
+    <UnitTestResult executionId="526a8ddf-5382-45e3-8575-d058e1fa5ffd" testId="bb439f9f-fec1-c8e6-de29-38825c210bee" testName="Test_stores_with_multi_where" computerName="STEVEN-PC" duration="00:00:00.0081189" startTime="2012-03-25T22:28:49.5203906-04:00" endTime="2012-03-25T22:28:49.5359907-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="526a8ddf-5382-45e3-8575-d058e1fa5ffd">
+    </UnitTestResult>
+    <UnitTestResult executionId="d2929ec0-1b5c-4e12-b38f-b86764b66540" testId="fdf8930d-32cc-6043-e5e7-a8a1cf1cdf45" testName="Test_stores_with_product" computerName="STEVEN-PC" duration="00:00:00.0008895" startTime="2012-03-25T22:28:49.5359907-04:00" endTime="2012-03-25T22:28:49.5359907-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2929ec0-1b5c-4e12-b38f-b86764b66540">
+    </UnitTestResult>
+    <UnitTestResult executionId="c0119218-dbdd-4070-8ef3-8ec3bbc7a68b" testId="b366df67-fbbf-42de-4bd5-7bf833b872da" testName="Test_stores_signle" computerName="STEVEN-PC" duration="00:00:13.8230227" startTime="2012-03-25T22:28:49.5359907-04:00" endTime="2012-03-25T22:29:03.3732150-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0119218-dbdd-4070-8ef3-8ec3bbc7a68b">
+    </UnitTestResult>
+    <UnitTestResult executionId="802f2c7a-45b3-4f73-9ad3-903c51f2d577" testId="48be9065-54cb-9463-4db0-a28fb13c3f13" testName="Test_where" computerName="STEVEN-PC" duration="00:00:00.0024191" startTime="2012-03-25T22:29:03.3732150-04:00" endTime="2012-03-25T22:29:03.3888150-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="802f2c7a-45b3-4f73-9ad3-903c51f2d577">
+    </UnitTestResult>
+    <UnitTestResult executionId="08918222-71c1-4ea5-a59e-7e41f569442c" testId="307ba5ae-4047-4671-a0ae-59b923691649" testName="Test_where_not" computerName="STEVEN-PC" duration="00:00:00.0009599" startTime="2012-03-25T22:29:03.3888150-04:00" endTime="2012-03-25T22:29:03.4044150-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08918222-71c1-4ea5-a59e-7e41f569442c">
+    </UnitTestResult>
+    <UnitTestResult executionId="a7854c8a-1778-4e46-8fee-af5f814a7791" testId="a7b1c2c3-270d-28e1-4f96-d6cdab3fb0cb" testName="Test_multi_clause_where" computerName="STEVEN-PC" duration="00:00:00.0007290" startTime="2012-03-25T22:29:03.4044150-04:00" endTime="2012-03-25T22:29:03.4044150-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7854c8a-1778-4e46-8fee-af5f814a7791">
+    </UnitTestResult>
+    <UnitTestResult executionId="a1c6f320-59e4-40fe-932c-8a18b15a100f" testId="b57e08db-af27-e035-f405-a5594770d231" testName="Test_multi_clause_where_and_where_not" computerName="STEVEN-PC" duration="00:00:00.0005911" startTime="2012-03-25T22:29:03.4200150-04:00" endTime="2012-03-25T22:29:03.4200150-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1c6f320-59e4-40fe-932c-8a18b15a100f">
+    </UnitTestResult>
+    <UnitTestResult executionId="a2eba870-f687-4717-b6a3-fec454b58cc6" testId="0d67a389-f27a-5927-df7c-deaa56a2ac23" testName="Test_orderby" computerName="STEVEN-PC" duration="00:00:00.0025895" startTime="2012-03-25T22:29:03.4200150-04:00" endTime="2012-03-25T22:29:03.4356151-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2eba870-f687-4717-b6a3-fec454b58cc6">
+    </UnitTestResult>
+    <UnitTestResult executionId="6a7cb285-dd24-4b66-a4f3-c0fb672d6a93" testId="c951cc96-fab2-20b5-116b-f8b36cf91c10" testName="Test_multi_clause_orderby" computerName="STEVEN-PC" duration="00:00:00.0015416" startTime="2012-03-25T22:29:03.4512151-04:00" endTime="2012-03-25T22:29:03.4512151-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a7cb285-dd24-4b66-a4f3-c0fb672d6a93">
+    </UnitTestResult>
+    <UnitTestResult executionId="2ece825b-0f2c-42bb-8785-65576d5e32f8" testId="ec9a58f6-675c-e225-4fe5-716d9377a0a3" testName="Test_single" computerName="STEVEN-PC" duration="00:00:00.1237669" startTime="2012-03-25T22:29:03.4512151-04:00" endTime="2012-03-25T22:29:03.5916153-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ece825b-0f2c-42bb-8785-65576d5e32f8">
+    </UnitTestResult>
+    <UnitTestResult executionId="21f581d6-7700-496d-950a-369690773209" testId="8bab2567-7cbc-0ab9-1b8e-7f96790444c6" testName="Test_enumerator" computerName="STEVEN-PC" duration="00:00:00.1107440" startTime="2012-03-25T22:29:03.5916153-04:00" endTime="2012-03-25T22:29:03.7164156-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21f581d6-7700-496d-950a-369690773209">
+    </UnitTestResult>
+    <UnitTestResult executionId="9f398063-0edb-4675-9c75-4a15f5d1c498" testId="60b0cf60-fe03-004c-4bfa-4785b16f1dce" testName="Test_where_and" computerName="STEVEN-PC" duration="00:00:00.0021188" startTime="2012-03-25T22:29:03.7164156-04:00" endTime="2012-03-25T22:29:03.7320156-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f398063-0edb-4675-9c75-4a15f5d1c498">
+    </UnitTestResult>
+    <UnitTestResult executionId="95e30c25-e5c0-4d38-b9eb-7c2ab39e7fcb" testId="4a258fa4-e5be-4f7a-e3e4-e1dc90744510" testName="Test_bool_where" computerName="STEVEN-PC" duration="00:00:00.0005841" startTime="2012-03-25T22:29:03.7320156-04:00" endTime="2012-03-25T22:29:03.7476156-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95e30c25-e5c0-4d38-b9eb-7c2ab39e7fcb">
+    </UnitTestResult>
+    <UnitTestResult executionId="49dbac01-be5a-4c8f-9e02-502036d5ab14" testId="6ba02aa5-1bfb-ebcb-b41c-615999aa8334" testName="Test_toList" computerName="STEVEN-PC" duration="00:00:00.1022336" startTime="2012-03-25T22:29:03.7476156-04:00" endTime="2012-03-25T22:29:03.8568158-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49dbac01-be5a-4c8f-9e02-502036d5ab14">
+    </UnitTestResult>
+    <UnitTestResult executionId="dfc079a5-a10b-4dfd-9998-d49785c72249" testId="c9354350-cbda-a1f1-e280-b767455dde09" testName="Test_products_in_store_by_id" computerName="STEVEN-PC" duration="00:00:00.0005834" startTime="2012-03-25T22:29:03.8568158-04:00" endTime="2012-03-25T22:29:03.8724158-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dfc079a5-a10b-4dfd-9998-d49785c72249">
+    </UnitTestResult>
+    <UnitTestResult executionId="64e319e6-e94b-4cc9-ab77-f4ad07fb3679" testId="e2f6ed2b-f024-54cb-80b7-ad507738c243" testName="Test_products_in_store_lazy_loaded" computerName="STEVEN-PC" duration="00:00:04.3931367" startTime="2012-03-25T22:29:03.8724158-04:00" endTime="2012-03-25T22:29:08.2716236-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64e319e6-e94b-4cc9-ab77-f4ad07fb3679">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;stores/511/products&gt;. Actual:&lt;stores/511/products?&gt;. </Message>
+          <StackTrace>   at LinqToLcboTests.ProductTest.Test_products_in_store_lazy_loaded() in C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcboTests\ProductTest.cs:line 189
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="605bf7c9-7992-4f9a-af85-a0e69e664b7d" testId="81800161-52ee-707e-8522-02ae1672866e" testName="Test_products_in_store_with_where" computerName="STEVEN-PC" duration="00:00:00.1091316" startTime="2012-03-25T22:29:08.2872236-04:00" endTime="2012-03-25T22:29:08.3964238-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="605bf7c9-7992-4f9a-af85-a0e69e664b7d">
+    </UnitTestResult>
+    <UnitTestResult executionId="d023664d-9add-4c4d-bfb3-0f55806168cf" testId="4789e52f-0940-a3c8-fe6a-e13b73623977" testName="Test_where_and_orderby" computerName="STEVEN-PC" duration="00:00:00.0010125" startTime="2012-03-25T22:29:08.4120238-04:00" endTime="2012-03-25T22:29:08.4120238-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d023664d-9add-4c4d-bfb3-0f55806168cf">
+    </UnitTestResult>
+    <UnitTestResult executionId="402700a9-138b-49a5-b8f7-1955b36d5592" testId="71326b83-217a-3999-c98f-d98f8093dd74" testName="Test_take" computerName="STEVEN-PC" duration="00:00:00.0006432" startTime="2012-03-25T22:29:08.4276238-04:00" endTime="2012-03-25T22:29:08.4276238-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="402700a9-138b-49a5-b8f7-1955b36d5592">
+    </UnitTestResult>
+    <UnitTestResult executionId="88125a53-2216-4293-82df-9c2b225c86de" testId="698a4013-3243-f2c9-ad1a-f5a3b3e0436d" testName="Test_skip" computerName="STEVEN-PC" duration="00:00:00.0006425" startTime="2012-03-25T22:29:08.4432239-04:00" endTime="2012-03-25T22:29:08.4432239-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88125a53-2216-4293-82df-9c2b225c86de">
+    </UnitTestResult>
+    <UnitTestResult executionId="96ae7fa9-ee2c-4827-80e2-ab78db28719c" testId="b3d263e1-3345-99ad-b04d-44df64ff509a" testName="Test_take_and_skip" computerName="STEVEN-PC" duration="00:00:00.0004542" startTime="2012-03-25T22:29:08.4588239-04:00" endTime="2012-03-25T22:29:08.4588239-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="96ae7fa9-ee2c-4827-80e2-ab78db28719c">
+    </UnitTestResult>
+    <UnitTestResult executionId="295e0484-8740-45ac-8cd5-cfcd8652459b" testId="b2719bc8-3ebd-312c-8cb4-2d05465c386b" testName="Test_product_by_inventory" computerName="STEVEN-PC" duration="00:00:00.0004462" startTime="2012-03-25T22:29:08.4588239-04:00" endTime="2012-03-25T22:29:08.4744239-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="295e0484-8740-45ac-8cd5-cfcd8652459b">
+    </UnitTestResult>
+  </Results>
+</TestRun>

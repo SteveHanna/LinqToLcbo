@@ -1,0 +1,8 @@
+C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcboTests\bin\Debug\LinqToLcboTests.dll
+C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcboTests\bin\Debug\LinqToLcboTests.pdb
+C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcboTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcboTests\obj\Debug\LinqToLcboTests.dll
+C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcboTests\obj\Debug\LinqToLcboTests.pdb
+C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcboTests\bin\Debug\LinqToLcbo.dll
+C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcboTests\bin\Debug\LinqToLcbo.pdb
+C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcboTests\bin\Debug\Newtonsoft.Json.dll
