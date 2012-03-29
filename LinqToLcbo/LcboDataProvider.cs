@@ -89,6 +89,11 @@ namespace LinqToLcbo
             return this;
         }
 
+        public LcboDataProvider<T, Twhere, TSingle, TOrderBy> Select()
+        {
+            return this;
+        }
+
         public List<T> ToList()
         {
             return DataServiceAdapter<T>.Get(_query).ToList();

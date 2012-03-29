@@ -221,5 +221,17 @@ namespace LinqToLcboTests
             var q = data.Products.Where(o => o.SearchQuery == "heineken").Take(10).Skip(2);
             Assert.AreEqual("products?q=heineken&per_page=10&page=2", GetQuery(q));
         }
+
+        [TestMethod]
+        public void Test_select()
+        {
+            var data = new LcboDataSource();
+            var x = from product in data.Products
+                    where product.SearchQuery == "heineken" && !product.IsDiscontinued
+                    select product;
+            Console.WriteLine(x.ToList().First().Name);
+
+            Assert.AreEqual("products?q=heineken", GetQuery(x));
+        }
     }
 }
