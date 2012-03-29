@@ -229,7 +229,6 @@ namespace LinqToLcboTests
             var x = from product in data.Products
                     where product.SearchQuery == "heineken" && !product.IsDiscontinued
                     select product;
-            Console.WriteLine(x.ToList().First().Name);
 
             Assert.AreEqual("products?q=heineken", GetQuery(x));
         }
