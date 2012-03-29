@@ -61,27 +61,5 @@ namespace LinqToLcboTests
             Store store = data.Stores.Single(o => o.Id == 511);
             Assert.AreEqual(511, store.Id);
         }
-
-        [TestMethod]
-        public void Test_GEO()
-        {
-            var lcbo = new LcboDataSource();
-            //var stores = lcbo.Stores.Where(o => o.Geolocation == "Spadina").OrderBy(o => o.Distance).ToList();
-            //var products = stores[0].Products.Where(o => o.SearchQuery == "heineken");
-
-            var store = (from s in lcbo.Stores
-                        where s.Geolocation == "Spadina"
-                        orderby s.Distance
-                        select s).ToList();
-
-            var products = from p in store[0].Products
-                           where p.SearchQuery == "heineken"
-                           select p;
-
-
-
-            Store store = lcbo.Stores.Single(o => o.Id == 511);
-            Assert.AreEqual(511, store.Id);
-        }
     }
 }
