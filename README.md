@@ -47,4 +47,4 @@ LinqToLcbo is a custom LINQ Provider that allows querying the LCBO for products,
 
 ## Not your average LINQ Provider
 
-This project is an exersize in demonstrating the flexibility of LINQ. Since LINQ works as a language pattern (like foreach), implementing IQUeryable<T> is not nessesary. Instead, this project only implements a subset of the Standard Query Operators to provide a rich compiler enforced query syntax.
+This project is an exercise in demonstrating the flexibility of LINQ. Since LINQ works as a language pattern (like foreach), implementing IQUeryable is not necessary. Instead, this project only implements a subset of the Standard Query Operators to provide a rich compiler enforced query syntax.
