@@ -1,6 +1,0 @@
-C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcbo\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcbo\bin\Debug\LinqToLcbo.dll
-C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcbo\bin\Debug\LinqToLcbo.pdb
-C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcbo\obj\Debug\LinqToLcbo.dll
-C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcbo\obj\Debug\LinqToLcbo.pdb
-C:\Users\Steven\Documents\Visual Studio 2010\Projects\LinqToLcbo\LinqToLcbo\bin\Debug\Newtonsoft.Json.dll
