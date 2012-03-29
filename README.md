@@ -4,7 +4,7 @@ LinqToLcbo is a custom Linq Provider that allows querying the LCBO for products,
 
 ## Sample Code: Query for products with filter & sorting
 
-'''c#
+```c#
 	var lcbo = new LcboDataSource();
 	
 	var products = from product in data.Products
@@ -18,4 +18,4 @@ LinqToLcbo is a custom Linq Provider that allows querying the LCBO for products,
 	
 	foreach (Product p in products)
 		Console.WriteLine(p.Name);
-'''
+```
