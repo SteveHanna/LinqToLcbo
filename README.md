@@ -43,7 +43,7 @@ LinqToLcbo is a custom LINQ Provider that allows querying the LCBO for products,
 		Console.WriteLine(p.Name);
 ```
 
-### Query for a product's inventory at specific store
+### Query for a product's inventory at a specific store
 
 ```c#
 	var lcbo = new LcboDataSource();
