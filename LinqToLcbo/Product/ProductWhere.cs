@@ -9,6 +9,7 @@ namespace LinqToLcbo
     {
         public ProductWhere()
         {
+            Id = new IntProperty("id");
             SearchQuery = new StringSearchQueryProperty("searchQuery");
             StoreId = new IntProperty("storeId");
             IsDiscontinued = new BoolProperty("is_discontinued");
@@ -21,6 +22,7 @@ namespace LinqToLcbo
             IsKosher = new BoolProperty("is_kosher");
         }
 
+        public IntProperty Id { get; set; }
         public StringSearchQueryProperty SearchQuery { get; set; }
         public IntProperty StoreId { get; set; }
         public BoolProperty IsDead { get; set; }

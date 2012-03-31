@@ -127,8 +127,49 @@ namespace LinqToLcboTests
             var data = new LcboDataSource();
             Product p = data.Products.Single(o => o.Id == 18);
 
-            Assert.AreEqual("Heineken", p.Name);
+            Assert.AreEqual(18, p.Id);
         }
+
+        [TestMethod]
+        public void Test_where_then_single()
+        {
+            var data = new LcboDataSource();
+
+            Product heineken = (from p in data.Products
+                                where p.Id == 18
+                                select p).Single();
+
+            Assert.AreEqual(18, heineken.Id);
+        }
+        [TestMethod]
+        public void Test_where_then_singleOrDefault()
+        {
+            var data = new LcboDataSource();
+
+            Product heineken = (from p in data.Products
+                                where p.Id == 180000
+                                select p).SingleOrDefault();
+
+            Assert.IsNull(heineken);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(System.Net.WebException))]
+        public void Test_single_with_exception()
+        {
+            var data = new LcboDataSource();
+            Product p = data.Products.Single(o => o.Id == 1800000);
+        }
+
+        [TestMethod]
+        public void Test_singleOrDefault()
+        {
+            var data = new LcboDataSource();
+            Product p = data.Products.SingleOrDefault(o => o.Id == 1800000);
+
+            Assert.IsNull(p);
+        }
+
 
         [TestMethod]
         public void Test_enumerator()
@@ -230,7 +271,7 @@ namespace LinqToLcboTests
                     where product.SearchQuery == "heineken" && !product.IsDiscontinued
                     select product;
 
-            Assert.AreEqual("products?q=heineken", GetQuery(x));
+            Assert.AreEqual("products?q=heineken&where_not=is_discontinued", GetQuery(x));
         }
     }
 }

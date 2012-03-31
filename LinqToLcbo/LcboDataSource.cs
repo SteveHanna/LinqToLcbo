@@ -9,6 +9,7 @@ namespace LinqToLcbo
     {
         public LcboProductProvider Products { get { return new LcboProductProvider(); } }
         public LcboStoreProvider Stores { get { return new LcboStoreProvider(); } }
+        public LcboInventoryProvider Inventories { get { return new LcboInventoryProvider(); } }
     }
 
     public class LcboProductProvider : LcboDataProvider<Product, ProductWhere, ProductSingle, ProductOrderBy>
@@ -21,5 +22,22 @@ namespace LinqToLcbo
     {
         public LcboStoreProvider() : base("stores") { }
         public LcboStoreProvider(string secondaryResourceName, int secondaryResourceId) : base("stores", secondaryResourceName, secondaryResourceId) { }
+    }
+
+    public class LcboInventoryProvider : LcboDataProvider<Inventory, InventoryWhere, InventorySingle, InventoryOrderBy>
+    {
+        public LcboInventoryProvider() : base("inventories") { }
+        public LcboInventoryProvider(string secondaryResourceName, int secondaryResourceId) : base("inventories", secondaryResourceName, secondaryResourceId) { }
+
+        //Inventory requires a custom implementation for Single since the API is completely different than Products & Stores
+        public new Inventory Single(Func<InventorySingle, WhereFilter> filter)
+        {
+            var where = filter(new InventorySingle());
+
+            if (!where.NameAndValues.ContainsKey("storeId") || !where.NameAndValues.ContainsKey("productId"))
+                throw new ArgumentException("Both Store Id and Product Id are required to get a single inventory");
+
+            return  DataServiceAdapter<Inventory>.GetSingle("stores/" + where.NameAndValues["storeId"] + "/products/" + where.NameAndValues["productId"] + "/inventory");
+        }
     }
 }

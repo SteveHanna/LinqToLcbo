@@ -99,5 +99,6 @@ namespace LinqToLcbo
         public int Volume { get; set; }
 
         public LcboStoreProvider Stores { get { return new LcboStoreProvider("products", Id); } }
+        public LcboInventoryProvider Inventories { get { return new LcboInventoryProvider("products", Id); } }
     }
 }

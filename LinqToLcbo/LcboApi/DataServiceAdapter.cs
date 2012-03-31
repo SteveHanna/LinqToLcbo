@@ -31,6 +31,7 @@ namespace LinqToLcbo
         {
             HttpWebRequest webRequest = WebRequest.Create(url) as HttpWebRequest;
             HttpWebResponse webResponse = webRequest.GetResponse() as HttpWebResponse;
+            
             using (StreamReader reader = new StreamReader(webResponse.GetResponseStream()))
             {
                 return reader.ReadToEnd();

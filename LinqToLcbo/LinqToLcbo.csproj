@@ -43,11 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Intentories\Inventory.cs" />
+    <Compile Include="Intentories\InventoryOrderBy.cs" />
+    <Compile Include="Intentories\InventorySingle.cs" />
+    <Compile Include="Intentories\InventoryWhere.cs" />
     <Compile Include="LcboApi\IDataMapper.cs" />
     <Compile Include="LcboApi\JsonHelper.cs" />
     <Compile Include="Props\IntProperty.cs" />
     <Compile Include="Product\ProductSingle.cs" />
-    <Compile Include="LcboResult.cs" />
     <Compile Include="Props\BoolProperty.cs" />
     <Compile Include="Filters\OrderByFilter.cs" />
     <Compile Include="Filters\IdFilter.cs" />
@@ -57,7 +60,6 @@
     <Compile Include="Product\Product.cs" />
     <Compile Include="LcboDataProvider.cs" />
     <Compile Include="LcboApi\DataServiceAdapter.cs" />
-    <Compile Include="Pager.cs" />
     <Compile Include="Product\ProductOrderBy.cs" />
     <Compile Include="Product\ProductWhere.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
