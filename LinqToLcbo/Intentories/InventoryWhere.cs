@@ -9,10 +9,12 @@ namespace LinqToLcbo
     {
         public InventoryWhere()
         {
-            IsDead = new BoolProperty("is_dead");
+            StoreId = new IntProperty("storeId");
             ProductId = new IntProperty("productId");
+            IsDead = new BoolProperty("is_dead");
         }
 
+        public IntProperty StoreId { get; set; }
         public IntProperty ProductId { get; set; }
         public BoolProperty IsDead { get; set; }
     }

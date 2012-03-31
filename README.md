@@ -13,7 +13,6 @@ LinqToLcbo is a custom LINQ Provider that allows querying the LCBO for products,
                     select product;
 	
 	//Alternatively using lambda expressions
-	
 	var products = lcbo.Products
 		.Where(o => !o.IsDiscontinued && o.SearchQuery == "heineken")
 		.OrderBy(o=>o.Price);
@@ -37,12 +36,26 @@ LinqToLcbo is a custom LINQ Provider that allows querying the LCBO for products,
 				   select p;
 	
 	//Alternatively using lambda expressions
-	
 	var stores = lcbo.Stores.Where(o => o.Geolocation == "Spadina").OrderBy(o => o.Distance).ToList();
 	var products = stores[0].Products.Where(o => o.SearchQuery == "heineken");
 	
 	foreach (Product p in products)
 		Console.WriteLine(p.Name);
+```
+
+### Query for a product's inventory at specific store
+
+```c#
+	var lcbo = new LcboDataSource();
+	
+	 Inventory inventoryAtKing = (from i in lcbo.Inventories
+								  where i.ProductId == 18 && i.StoreId == 511
+								  select i).Single();
+					
+	//Alternatively using lambda expressions
+	Inventory inventoryAtKing = lcbo.Inventories.Single(o => o.StoreId == 511 && o.ProductId == 18);
+	
+	Console.WriteLine(inventoryAtKing.Quantity);
 ```
 
 ## Not your average LINQ Provider

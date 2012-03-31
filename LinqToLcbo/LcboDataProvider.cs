@@ -12,7 +12,7 @@ namespace LinqToLcbo
         where TSingle : new()
         where TOrderBy : new()
     {
-        private string _query;
+        protected string _query;
 
         public LcboDataProvider(string primaryResourceName, string secondaryResourceName, int secondaryResourceId)
         {

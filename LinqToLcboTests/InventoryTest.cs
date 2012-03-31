@@ -42,7 +42,7 @@ namespace LinqToLcboTests
 
             Assert.AreEqual("products/18/inventories", GetQuery(q));
         }
-        
+
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void Test_single_throws()
@@ -58,7 +58,19 @@ namespace LinqToLcboTests
             Inventory inventory = data.Inventories.Single(o => o.StoreId == 511 && o.ProductId == 18);
 
             Assert.IsTrue(inventory.ProductId == 18);
-            Assert.IsTrue(inventory.StoreId== 511);
+            Assert.IsTrue(inventory.StoreId == 511);
+        }
+
+        [TestMethod]
+        public void Test_whhere_then_single()
+        {
+            var data = new LcboDataSource();
+
+            var inventory = (from i in data.Inventories
+                    where i.ProductId == 18 && i.StoreId == 511
+                    select i).Single();
+
+            Assert.AreEqual("stores/511/products/18/inventory", GetQuery(q));
         }
     }
 }

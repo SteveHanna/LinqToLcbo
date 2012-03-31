@@ -39,5 +39,20 @@ namespace LinqToLcbo
 
             return  DataServiceAdapter<Inventory>.GetSingle("stores/" + where.NameAndValues["storeId"] + "/products/" + where.NameAndValues["productId"] + "/inventory");
         }
+
+        public new LcboDataProvider<Inventory, InventoryWhere, InventorySingle, InventoryOrderBy> Where(Func<InventoryWhere, WhereFilter> filter)
+        {
+            WhereFilter where = filter(new InventoryWhere());
+
+            if (where.NameAndValues.ContainsKey("productId") && where.NameAndValues.ContainsKey("storeId"))
+            {
+                _query = "stores/" + where.NameAndValues["storeId"] + "/products/" +where.NameAndValues["productId"] + "/inventory";
+                return this;
+            }
+            else if (where.NameAndValues.ContainsKey("storeId"))
+                throw new ArgumentException("Can't search by store id without product Id");
+            else
+                return base.Where(filter);
+        }
     }
 }
