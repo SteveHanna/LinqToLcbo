@@ -1,0 +1,128 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>LinqToLcbo</title>
+  <meta name="description" content="Use LINQ to query the LCBO for stores, products, and inventories.">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">LinqToLcbo</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Use LINQ to query the LCBO for stores, products, and inventories.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/SteveHanna/LinqToLcbo/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/SteveHanna/LinqToLcbo/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/SteveHanna/LinqToLcbo" class="code">fork LinqToLcbo on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>LinqToLcbo</h1>
+
+<p>LinqToLcbo is a custom LINQ Provider that allows querying the LCBO for products, stores, and inventories. Internally, queries translate into Web service calls sent to the <a href="http://lcboapi.com">LCBO API</a>. For detailed API information please see the <a href="http://http://lcboapi.com/docs/about">LCBO API Documentation</a>.</p>
+
+<h2>Query for products</h2>
+
+<div class="highlight">
+<pre>    <span class="kt">var</span> <span class="n">lcbo</span> <span class="p">=</span> <span class="k">new</span> <span class="n">LcboDataSource</span><span class="p">();</span>
+
+    <span class="kt">var</span> <span class="n">products</span> <span class="p">=</span> <span class="n">lcbo</span> <span class="n">product</span> <span class="k">in</span> <span class="n">data</span><span class="p">.</span><span class="n">Products</span>
+                    <span class="k">where</span> <span class="n">product</span><span class="p">.</span><span class="n">SearchQuery</span> <span class="p">==</span> <span class="s">"heineken"</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="n">product</span><span class="p">.</span><span class="n">IsDiscontinued</span>
+                    <span class="k">orderby</span> <span class="n">product</span><span class="p">.</span><span class="n">Price</span>
+                    <span class="k">select</span> <span class="n">product</span><span class="p">;</span>
+
+    <span class="c1">//Alternatively using lambda expressions</span>
+    <span class="kt">var</span> <span class="n">products</span> <span class="p">=</span> <span class="n">lcbo</span><span class="p">.</span><span class="n">Products</span>
+        <span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">o</span> <span class="p">=&gt;</span> <span class="p">!</span><span class="n">o</span><span class="p">.</span><span class="n">IsDiscontinued</span> <span class="p">&amp;&amp;</span> <span class="n">o</span><span class="p">.</span><span class="n">SearchQuery</span> <span class="p">==</span> <span class="s">"heineken"</span><span class="p">)</span>
+        <span class="p">.</span><span class="n">OrderBy</span><span class="p">(</span><span class="n">o</span><span class="p">=&gt;</span><span class="n">o</span><span class="p">.</span><span class="n">Price</span><span class="p">);</span>
+
+    <span class="k">foreach</span> <span class="p">(</span><span class="n">Product</span> <span class="n">p</span> <span class="k">in</span> <span class="n">products</span><span class="p">)</span>
+        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">Name</span><span class="p">);</span>
+</pre>
+</div>
+
+
+<h2>Query for stores then products</h2>
+
+<div class="highlight">
+<pre>    <span class="kt">var</span> <span class="n">lcbo</span> <span class="p">=</span> <span class="k">new</span> <span class="n">LcboDataSource</span><span class="p">();</span>
+
+    <span class="kt">var</span> <span class="n">stores</span> <span class="p">=</span> <span class="p">(</span><span class="k">from</span> <span class="n">s</span> <span class="k">in</span> <span class="n">lcbo</span><span class="p">.</span><span class="n">Stores</span>
+                        <span class="k">where</span> <span class="n">s</span><span class="p">.</span><span class="n">Geolocation</span> <span class="p">==</span> <span class="s">"Spadina"</span>
+                        <span class="k">orderby</span> <span class="n">s</span><span class="p">.</span><span class="n">Distance</span>
+                        <span class="k">select</span> <span class="n">s</span><span class="p">).</span><span class="n">ToList</span><span class="p">();</span>
+
+    <span class="kt">var</span> <span class="n">products</span> <span class="p">=</span> <span class="k">from</span> <span class="n">p</span> <span class="k">in</span> <span class="n">stores</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">Products</span>
+                   <span class="k">where</span> <span class="n">p</span><span class="p">.</span><span class="n">SearchQuery</span> <span class="p">==</span> <span class="s">"heineken"</span>
+                   <span class="k">select</span> <span class="n">p</span><span class="p">;</span>
+
+    <span class="c1">//Alternatively using lambda expressions</span>
+    <span class="kt">var</span> <span class="n">stores</span> <span class="p">=</span> <span class="n">lcbo</span><span class="p">.</span><span class="n">Stores</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">o</span> <span class="p">=&gt;</span> <span class="n">o</span><span class="p">.</span><span class="n">Geolocation</span> <span class="p">==</span> <span class="s">"Spadina"</span><span class="p">).</span><span class="n">OrderBy</span><span class="p">(</span><span class="n">o</span> <span class="p">=&gt;</span> <span class="n">o</span><span class="p">.</span><span class="n">Distance</span><span class="p">).</span><span class="n">ToList</span><span class="p">();</span>
+    <span class="kt">var</span> <span class="n">products</span> <span class="p">=</span> <span class="n">stores</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">Products</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">o</span> <span class="p">=&gt;</span> <span class="n">o</span><span class="p">.</span><span class="n">SearchQuery</span> <span class="p">==</span> <span class="s">"heineken"</span><span class="p">);</span>
+
+    <span class="k">foreach</span> <span class="p">(</span><span class="n">Product</span> <span class="n">p</span> <span class="k">in</span> <span class="n">products</span><span class="p">)</span>
+        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">Name</span><span class="p">);</span>
+</pre>
+</div>
+
+
+<h2>Query for a product's inventory at a specific store</h2>
+
+<div class="highlight">
+<pre>    <span class="kt">var</span> <span class="n">lcbo</span> <span class="p">=</span> <span class="k">new</span> <span class="n">LcboDataSource</span><span class="p">();</span>
+
+     <span class="n">Inventory</span> <span class="n">inventoryAtKing</span> <span class="p">=</span> <span class="p">(</span><span class="k">from</span> <span class="n">i</span> <span class="k">in</span> <span class="n">lcbo</span><span class="p">.</span><span class="n">Inventories</span>
+                                  <span class="k">where</span> <span class="n">i</span><span class="p">.</span><span class="n">ProductId</span> <span class="p">==</span> <span class="m">18</span> <span class="p">&amp;&amp;</span> <span class="n">i</span><span class="p">.</span><span class="n">StoreId</span> <span class="p">==</span> <span class="m">511</span>
+                                  <span class="k">select</span> <span class="n">i</span><span class="p">).</span><span class="n">Single</span><span class="p">();</span>
+
+    <span class="c1">//Alternatively using lambda expressions</span>
+    <span class="n">Inventory</span> <span class="n">inventoryAtKing</span> <span class="p">=</span> <span class="n">lcbo</span><span class="p">.</span><span class="n">Inventories</span><span class="p">.</span><span class="n">Single</span><span class="p">(</span><span class="n">o</span> <span class="p">=&gt;</span> <span class="n">o</span><span class="p">.</span><span class="n">StoreId</span> <span class="p">==</span> <span class="m">511</span> <span class="p">&amp;&amp;</span> <span class="n">o</span><span class="p">.</span><span class="n">ProductId</span> <span class="p">==</span> <span class="m">18</span><span class="p">);</span>
+
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">inventoryAtKing</span><span class="p">.</span><span class="n">Quantity</span><span class="p">);</span>
+</pre>
+</div>
+
+
+<h2>Not your average LINQ Provider</h2>
+
+<p>This project is an exercise in demonstrating the flexibility of LINQ. Since LINQ works as a language pattern (like foreach), implementing IQueryable is not necessary. Instead, this project only implements a subset of the Standard Query Operators to provide a rich compiler enforced query syntax.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/SteveHanna" class="avatar"><img src="https://secure.gravatar.com/avatar/2356c50e214396a09c52e32b6109cf7f?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48" height="48"/></a> <a href="https://github.com/SteveHanna">SteveHanna</a> maintains <a href="https://github.com/SteveHanna/LinqToLcbo">LinqToLcbo</a></p>
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/SteveHanna/LinqToLcbo/tarball/master" class="tar">tar</a><a href="https://github.com/SteveHanna/LinqToLcbo/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
